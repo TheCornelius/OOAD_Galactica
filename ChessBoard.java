@@ -23,6 +23,8 @@ public class ChessBoard extends Application{
         Scene scene = new Scene(gridPane, 700,800);
         primaryStage.setScene(scene);
         primaryStage.show();
+
+        System.out.println("Hello World");
     }
 
     public static void main(String[] args) {
