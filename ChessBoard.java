@@ -25,6 +25,7 @@ public class ChessBoard extends Application{
         primaryStage.show();
 
         System.out.println("Hello World");
+        System.out.println("Hello 123");
     }
 
     public static void main(String[] args) {
