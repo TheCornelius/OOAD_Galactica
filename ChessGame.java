@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class ChessGame {                     //main game model sequence should be here
-    private GenericChessPiece[][] chessPieces;    //store current chessPieces objects
+    protected GenericChessPiece[][] chessPieces;    //store current chessPieces objects
 
     public ChessGame() {
         initializeChess();
@@ -35,10 +35,16 @@ public class ChessGame {                     //main game model sequence should b
 
     }
     public void swapTrianglePlus(){
-
+        //TO-DO
     }
 
     public GenericChessPiece[][] getChessPieces() {
         return chessPieces;
     }
+
+    public void moveChessPieces(int fromRow, int fromCol, int toRow, int toCol){
+        chessPieces[toRow][toCol] = chessPieces[fromRow][fromCol];
+        chessPieces[fromRow][fromCol] = null;
+    }
+
 }

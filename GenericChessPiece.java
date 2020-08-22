@@ -1,10 +1,10 @@
 import java.awt.*;
 import java.util.ArrayList;
 
-public abstract class GenericChessPiece {
+public abstract class GenericChessPiece implements Cloneable{
     private Point coordinate;               //obsolete
     private int team;                       //1:blue 2:red
-    private boolean isActive;
+    private boolean isActive;               //obsolete
     private String[] iconImage;
 
     public GenericChessPiece(int team, boolean isActive, String[] iconImage) {
@@ -29,6 +29,7 @@ public abstract class GenericChessPiece {
         return iconImage;
     }
 
-    public abstract ArrayList<Point> showValidPossibleMoves();
+    public abstract ArrayList<Point> showValidPossibleMoves();      //TO-DO
+
 
 }
