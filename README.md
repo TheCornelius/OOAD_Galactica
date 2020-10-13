@@ -1,5 +1,5 @@
 ### Webale Chess Game
-This is an university assignment which aims to design a Webale chess game using appropriate design patterns.
+This is a university assignment which aims to design a Webale chess game using appropriate design patterns.
 
 ### Design patterns used:
 - MVC
